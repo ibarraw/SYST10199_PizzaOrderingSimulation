@@ -1,0 +1,45 @@
+/*Written by William Ibarra on March 1, 2021 for SYST 10199*/
+body {
+    background-color: steelblue; 
+}
+form {
+    font-weight: bold;
+
+}
+table {
+    background-color: lightsteelblue;
+    border-collapse: separate;
+    padding: 10px;             
+}
+fieldset {
+    background-color: lavenderblush;
+    margin-top: 15px;
+}
+legend {
+    background-color: plum;
+    text-decoration: underline;
+    
+}
+h1 {
+    text-align: center;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 5px#484f4f;
+}
+#a1, #a2, #a3, #printOut {
+    color: red;
+    font-weight: bold;
+}
+.aesterisk {
+    padding-left: 10px;
+}
+#validateText {
+    margin-right: 10px;
+}
+img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+}

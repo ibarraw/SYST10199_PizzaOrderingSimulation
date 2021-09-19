@@ -1,0 +1,100 @@
+<!DOCTYPE HTML> <!--Written by William Ibarra on March 1, 2021 for SYST 10199-->
+<html>
+<head>
+    <script type="text/javascript" src="JS/JS_Assignment2.js"></script>
+    <link rel = "stylesheet" href="CSS/CSS_Assignment2.css">
+</head>
+<body>
+    <h1>Welcome to William Ibarra's Assignment 2 for SYST10199!</h1>
+    <form name="form1" method= "get" action="JS/JS_Assignment2.js">
+        <fieldset>
+            <legend>Enter your delivery information</legend>
+                <table id="table1">                
+                    <tr>
+                        <td><label for="lName">Last Name:</label></td>
+                        <td><input type="text" id="lName"><span id="a1" class="aesterisk">*</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fName">First Name:</label></td>
+                        <td><input type="text" id="fName"><span id="a2" class="aesterisk">*</span></td>
+                    </tr>
+                    <tr><td><label for="pNumber">Phone Number:</label></td>
+                        <td><input type="text" id="pNumber"><span id="a3" class="aesterisk">*</span></td>
+                    </tr>
+                </table>
+        </fieldset>
+        <fieldset>
+            <legend>Pick your pizza size and Crust</legend>
+                <table id="table2">
+                    <tr>
+                        <td>
+                            <label for="crust">Pizza Crust:</label>
+                            <input type="radio" name="crustType" id="regCrust" class="crust" checked>Regular
+                            <input type="radio" name="crustType" id="thnCrust" class="crust">Thin Crust
+                            <input type="radio" name="crustType" id="hndCrust" class="crust">Hand Tossed
+                        </td>
+                    </tr>
+                </table>
+        </fieldset>
+        <fieldset>
+            <legend>Save time by picking a premade pizza and drink of your choice!</legend>
+                <table id="table3">
+                    <tr>
+                        <td><label for="vegLover">Veggie Lover:</label></td>
+                        <td>
+                            <input type="radio" name="vegType" id="vegSmall" class="vegLover">Small
+                            <input type="radio" name="vegType" id="vegMedium" class="vegLover">Medium
+                            <input type="radio" name="vegType" id="vegLarge"class="vegLover">Large
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="pepperoni">Pepperoni:</label></td>
+                        <td>
+                            <input type="radio" name="pepType" id="pepSmall" class="pepperoni">Small
+                            <input type="radio" name="pepType" id="pepMedium" class="pepperoni">Medium
+                            <input type="radio" name="pepType" id="pepLarge" class="pepperoni">Large
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="cheese">Cheese:</label></td>
+                        <td>
+                            <input type="radio" name="cheType" id="cheSmall" class="cheese">Small
+                            <input type="radio" name="cheType" id="cheMedium" class="cheese">Medium
+                            <input type="radio" name="cheType" id="cheLarge" class="cheese">Large
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td><label for="beverages">Drinks:</label></td>
+                        <td>
+                            <select name="drinks" id="beverages">
+                                <option name="drinks" id="default" value="Select One">Select One</option>
+                                <option name="drinks" id="coke" value="coke">Coke</option>
+                                <option name="drinks" id="sprite" value="sprite">Sprite</option>
+                                <option name="drinks" id="canadaDry" value="canadaDry">Canada Dry</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+        </fieldset>
+        <fieldset>
+            <legend>Calculate your total price here!</legend> 
+                <table id="table4">
+                    <tr>
+                        <td><input type="button" id="validateText" onclick="calculateTotal()" value="Calculate Total"></td>
+                        <td><span id="printOut" class="printOut"></span></td>
+                    </tr>
+                </table>
+        </fieldset>        
+        <fieldset>
+            <legend>Image Source here</legend>
+                <table id="table5">
+                    <tr>     
+                        <td><input type="button" id="printSources" onclick="displaySource()" value="Image Source"></td>
+                        <td><span id="displayImageSource"></span></td>
+                    </tr>
+                </table>
+        </fieldset> 
+        <img id="pizzaDelivery" src="Images/PizzaDelivery.jpg" alt="Image of Pizza Delivery" id="img1">
+    </form>
+</body>
+</html>
